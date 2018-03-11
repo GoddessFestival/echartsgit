@@ -1,0 +1,51 @@
+echarts主要用到的有以下几个类（对象）：
+全局对象属性
+echarts:{} 
+
+
+实例对象的属性
+echartsInstance:{}
+
+
+支持的图表行为
+通过dispatchAction触发
+action:{}
+
+
+事件处理函数 通过on方法
+（两种事件：一种是鼠标事件，鼠标点击某个图形时触发；另一种是：调用dispatchAction后触发的事件）
+events:{}
+
+
+echarts.init(dom) 基于dom初始化实例
+myChart.setOption(option)  指定配置项和数据显示图表
+图表的配置项：
+option ={
+title:{text:''},标题组件，支持多标题
+tooltip:{},
+lengend:{  图例组件
+	data:[]
+},
+grid:{}, 直角坐标系内绘图网格
+xAxis:{  直角坐标系中grid的x轴  offset属性防止同个位置多个（大于2）x轴重叠
+	data:[]
+},
+yAxis:{
+	data:[]
+},
+polar:{},极坐标系
+radiusAxis:{},极坐标系径向轴
+angleAxis:{},极坐标系角度轴
+
+series:[{  系列列表  每个系列通过type决定自己的图表类型
+	name:"",
+	type:"",
+	data:[]
+
+}]
+
+};
+
+
+legend
+图例组件。展示了不同系列的标记（symbol），颜色和名字。通过点击图例控制哪些系列不显示。
