@@ -21,9 +21,9 @@ export * from 'echarts/src/echarts';
 // 引入饼图。
 import 'echarts/src/chart/pie';
 // 在这个场景下，可以引用 `echarts/src` 或者 `echarts/lib` 下的文件（但是不可混用），
-![Image 入口文件](https://raw.githubusercontent.com/GoddessFestival/echartsgit/master/assets/echartsCustom.png)
+![Image text](https://raw.githubusercontent.com/GoddessFestival/echartsgit/master/assets/echartsCustom.png)
 
-![Image pie.html]
+![Image text]
 (https://raw.githubusercontent.com/GoddessFestival/echartsgit/master/assets/pieHtml.png)
 
 
