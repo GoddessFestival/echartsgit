@@ -1,0 +1,21 @@
+{
+  "name": "pie",
+  "version": "1.0.0",
+  "description": "自定义pie",
+  "main": "echarts.custom.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "echarts": "^4.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/helper-module-transforms": "^7.0.0-beta.40",
+    "rollup": "^0.56.5",
+    "rollup-plugin-node-resolve": "^3.2.0",
+    "rollup-plugin-uglify": "^3.0.0"
+  }
+}
