@@ -1,33 +1,33 @@
+ï»¿
 
 
+è‡ªå®šä¹‰æ„å»ºpieé¥¼å›¾ï¼š
+echarts å·²ç»æä¾›äº†æ„å»ºè„šæœ¬ echarts/build/build.js
 
-×Ô¶¨Òå¹¹½¨pie±ıÍ¼£º
-echarts ÒÑ¾­Ìá¹©ÁË¹¹½¨½Å±¾ echarts/build/build.js
 
-
-²é¿´¹¹½¨½Å±¾µÄÊ¹ÓÃ·½·¨
+æŸ¥çœ‹æ„å»ºè„šæœ¬çš„ä½¿ç”¨æ–¹æ³•
 node node_modules/echarts/build/build.js --help  
--i ´úÂëÈë¿ÚÎÄ¼ş
--o Éú³ÉµÄbundleÎÄ¼ş
---min Ñ¹ËõÎÄ¼ş£¨Ä¬ÈÏ²»Ñ¹Ëõ£©£¬²¢ÇÒÈ¥¶àÓàµÄ´òÓ¡´íÎóĞÅÏ¢µÄ´úÂë£¬ĞÎ³ÉÉú²ú»·¾³¿ÉÓÃµÄÎÄ¼ş¡£
---lang <language shortcut or file path>£ºÓïÑÔÄ¬ÈÏÊÇÖĞÎÄ¡£--lang enÊ¹ÓÃÓ¢ÎÄ
---sourcemap:Êä³ösource.map,±ãÓÚµ÷ÊÔ
---format£ºÊä³ö¸ñÊ½£¬¿ÉÑ¡'umb'£¨Ä¬ÈÏ£©¡¢'amd'¡¢'iife'¡¢'cjs'¡¢'es'
+-i ä»£ç å…¥å£æ–‡ä»¶
+-o ç”Ÿæˆçš„bundleæ–‡ä»¶
+--min å‹ç¼©æ–‡ä»¶ï¼ˆé»˜è®¤ä¸å‹ç¼©ï¼‰ï¼Œå¹¶ä¸”å»å¤šä½™çš„æ‰“å°é”™è¯¯ä¿¡æ¯çš„ä»£ç ï¼Œå½¢æˆç”Ÿäº§ç¯å¢ƒå¯ç”¨çš„æ–‡ä»¶ã€‚
+--lang <language shortcut or file path>ï¼šè¯­è¨€é»˜è®¤æ˜¯ä¸­æ–‡ã€‚--lang enä½¿ç”¨è‹±æ–‡
+--sourcemap:è¾“å‡ºsource.map,ä¾¿äºè°ƒè¯•
+--formatï¼šè¾“å‡ºæ ¼å¼ï¼Œå¯é€‰'umb'ï¼ˆé»˜è®¤ï¼‰ã€'amd'ã€'iife'ã€'cjs'ã€'es'
 
-¶¨ÒåÈë¿ÚÎÄ¼ş
-myProject/echarts.custom.js£¨ÒıÓÃËùĞèµÄechartsÄ£¿é£©
-// ÒıÈë echarts Ö÷Ä£¿é¡£
+å®šä¹‰å…¥å£æ–‡ä»¶
+myProject/echarts.custom.jsï¼ˆå¼•ç”¨æ‰€éœ€çš„echartsæ¨¡å—ï¼‰
+// å¼•å…¥ echarts ä¸»æ¨¡å—ã€‚
 export * from 'echarts/src/echarts';
-// ÒıÈë±ıÍ¼¡£
+// å¼•å…¥é¥¼å›¾ã€‚
 import 'echarts/src/chart/pie';
-// ÔÚÕâ¸ö³¡¾°ÏÂ£¬¿ÉÒÔÒıÓÃ `echarts/src` »òÕß `echarts/lib` ÏÂµÄÎÄ¼ş£¨µ«ÊÇ²»¿É»ìÓÃ£©£¬
-![Image Èë¿ÚÎÄ¼ş](https://raw.githubusercontent.com/GoddessFestival/echartsgit/master/assets/echartsCustom.png)
+// åœ¨è¿™ä¸ªåœºæ™¯ä¸‹ï¼Œå¯ä»¥å¼•ç”¨ `echarts/src` æˆ–è€… `echarts/lib` ä¸‹çš„æ–‡ä»¶ï¼ˆä½†æ˜¯ä¸å¯æ··ç”¨ï¼‰ï¼Œ
+![Image å…¥å£æ–‡ä»¶](https://raw.githubusercontent.com/GoddessFestival/echartsgit/master/assets/echartsCustom.png)
 
 ![Image pie.html]
 (https://raw.githubusercontent.com/GoddessFestival/echartsgit/master/assets/pieHtml.png)
 
 
-Ê¹ÓÃÃüÁîĞĞ¹¹½¨
+ä½¿ç”¨å‘½ä»¤è¡Œæ„å»º
 node node_modules/echarts/build/build.js --min -i echarts.custom.js -o lib/echarts.custom.min.js
 
 
@@ -52,14 +52,14 @@ node node_modules/echarts/build/build.js --min -i echarts.custom.js -o lib/echar
 
 
 
-ÔõÑùÔÚREADME.mdÖĞÌí¼ÓÍ¼Æ¬£º
-1¡¢ÔÚgithubÉÏµÄ²Ö¿â½¨Á¢Ò»¸ö´æ·ÅÍ¼Æ¬µÄÎÄ¼ş¼Ğ£¬ÎÄ¼ş¼ĞÃû×ÖËæÒâ¡£Èç£ºimg-folder
-2¡¢½«ĞèÒªÔÚREADNE.mdÖĞÏÔÊ¾µÄÍ¼Æ¬£¬pushµ½img-folderÎÄ¼ş¼ĞÖĞ¡£
-3¡¢È»ºó´ò¿ªgithub¹ÙÍø£¬½øÈë²Ö¿âµÄimg-folderÎÄ¼ş¼ĞÖĞ£¬ÕÒµ½Í¼Æ¬µÄµØÖ·
-4¡¢ÔÚREADME.mdÖĞÌîÈë£º
+æ€æ ·åœ¨README.mdä¸­æ·»åŠ å›¾ç‰‡ï¼š
+1ã€åœ¨githubä¸Šçš„ä»“åº“å»ºç«‹ä¸€ä¸ªå­˜æ”¾å›¾ç‰‡çš„æ–‡ä»¶å¤¹ï¼Œæ–‡ä»¶å¤¹åå­—éšæ„ã€‚å¦‚ï¼šimg-folder
+2ã€å°†éœ€è¦åœ¨READNE.mdä¸­æ˜¾ç¤ºçš„å›¾ç‰‡ï¼Œpushåˆ°img-folderæ–‡ä»¶å¤¹ä¸­ã€‚
+3ã€ç„¶åæ‰“å¼€githubå®˜ç½‘ï¼Œè¿›å…¥ä»“åº“çš„img-folderæ–‡ä»¶å¤¹ä¸­ï¼Œæ‰¾åˆ°å›¾ç‰‡çš„åœ°å€
+4ã€åœ¨README.mdä¸­å¡«å…¥ï¼š
 
 ![Image text](https://raw.githubusercontent.com/hongmaju/light7Local/master/img/productShow/20170518152848.png)
 
-×¢£º![Image text]Õâ¸ö±êÊ¶²»¿ÉÈ±ÉÙ£¬²»È»¾ÍÏÔÊ¾ÎÄ×ÖÁË¡£
+æ³¨ï¼š![Image text]è¿™ä¸ªæ ‡è¯†ä¸å¯ç¼ºå°‘ï¼Œä¸ç„¶å°±æ˜¾ç¤ºæ–‡å­—äº†ã€‚
 
-Image text£ºÖ¸µÄÊÇÈç¹ûÍ¼Æ¬²»´æÔÚÁË£¬ÒªÏÔÊ¾µÄÎÄ×ÖËµÃ÷¡£
+Image textï¼šæŒ‡çš„æ˜¯å¦‚æœå›¾ç‰‡ä¸å­˜åœ¨äº†ï¼Œè¦æ˜¾ç¤ºçš„æ–‡å­—è¯´æ˜ã€‚
