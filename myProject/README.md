@@ -31,6 +31,13 @@ import 'echarts/src/chart/pie';
 node node_modules/echarts/build/build.js --min -i echarts.custom.js -o lib/echarts.custom.min.js
 
 
+引用 echarts/lib/** 还是 echarts/src/**
+项目中如果直接引用 echarts 里的一些模块并自行构建，应该使用echarts/lib/** 路径，而不可使用 echarts/src/**。
+当使用构建脚本 echarts/build/build.js 打包 bundle，那么两者可以选其一使用（不可混用），使用 echarts/src/** 可以获得稍微小一些的文件体积。
+(目前，echarts/src/** 中是采用 ES Module 的源代码，echarts/lib/** 中是 echarts/src/** 编译成为 CommonJS 后的产物)
+
+
+
 
 
 
@@ -58,8 +65,7 @@ node node_modules/echarts/build/build.js --min -i echarts.custom.js -o lib/echar
 3、然后打开github官网，进入仓库的img-folder文件夹中，找到图片的地址
 4、在README.md中填入：
 
-![Image text](https://raw.githubusercontent.com/hongmaju/light7Local/master/img/productShow/20170518152848.png)
-
+![Image text](url)
 注：![Image text]这个标识不可缺少，不然就显示文字了。
 
 Image text：指的是如果图片不存在了，要显示的文字说明。
